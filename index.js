@@ -29,7 +29,7 @@ const questions = [
     {
         type:"input",
         name:"contribution",
-        message:"Email address:",
+        message:"What should be contributed:",
     },
     {
         type:"input",
@@ -40,7 +40,7 @@ const questions = [
         type:"list",
         name:"license",
         message:"select a license for the project",
-        choices: ["MIT", "Creative common", "None"],
+        choices: ["MIT", "CreativeCommon", "None"],
     
     },
     {
@@ -57,19 +57,23 @@ const questions = [
 
 ]
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName,data, (err) => {
+        if (err) {
+            console.error(err);
+        } else {
+            console.log(`${fileName} created successfully!`);
+        }
+    });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+        let template = generateMarkdown(answers);
+        writeToFile("newReadMe.md", template);
+    });
+}
 
 // Function call to initialize app
 init();
-inquirer.prompt(questions
-).then(
-    function (answers){
-        console.log(answers)
-        console.log(answers.title)
-    let template = generateMarkdown(answers)
-    console.log(template)
-    }
-)

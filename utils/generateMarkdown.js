@@ -21,7 +21,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license) {
     return `## License
-    This project is licensed under the ${license} License. Click [here](${renderLicenseLink(license)}) for more details.`;
+    This project is licensed under the ${license} License.`;
   }
   return '';
 }
@@ -32,7 +32,7 @@ function generateMarkdown(data) {
 
 ${renderLicenseBadge(data.license)}
 
-  ##Description
+  ## Description
   ${data.Description}
 
   ## Table of contents
@@ -49,7 +49,7 @@ ${renderLicenseBadge(data.license)}
   ${data.usage}
 
   ## Contributing
-  For contributing, please contact ${data.contribution}.
+  For contributing, please add ${data.contribution}.
 
   ## Testing
   ${data.testing}
