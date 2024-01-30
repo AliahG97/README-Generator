@@ -18,7 +18,7 @@ The ReadMe Generator app is a command line application designed to streamline th
 To install this project git clone https://github.com/AliahG97/README-Generator.git
 
 ## Screenshot
-![ReadMe Gen Screenshot](./utils/assets/images/ReadMeGenScreenshot.gif) https://aliahg97.github.io/README-Generator/
+![ReadMe Gen Screenshot](./utils/assets/images/README.md-screenshot2.gif) https://aliahg97.github.io/README-Generator/
 
 
 ## Features

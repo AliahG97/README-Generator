@@ -13,12 +13,12 @@ const questions = [
     },
     {
         type:"input",
-        name:"Description",
+        name:"description",
         message:"Describe your project",
     },
     {
         type:"input",
-        name:"Installation",
+        name:"installation",
         message:"Provide installation instructions:",
     },
     {
@@ -45,13 +45,13 @@ const questions = [
     },
     {
         type:"input",
-        name:"Credits",
+        name:"username",
         message:"Developer GitHub Username:",
     
     },
     {
         type:"input",
-        name:"Email",
+        name:"email",
         message:"Contact Email address:",
     },
 

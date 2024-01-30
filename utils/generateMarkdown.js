@@ -33,27 +33,35 @@ function generateMarkdown(data) {
 ${renderLicenseBadge(data.license)}
 
   ## Description
-  ${data.Description}
+  ${data.description}
 
   ## Table of contents
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Testing](#testing)
+  - [Credits](#credits)
   - ${renderLicenseLink(data.license) ? '[License](#license)' : ''}
 
   ## Installation
-  ${data.Installation}
+  ${data.installation}
 
   ## Usage
   ${data.usage}
 
   ## Contributing
-  For contributing, please add ${data.contribution}.
+  For contributing, please add ${data.contribution}
 
+  
   ## Testing
   ${data.testing}
+
+  ## Credits
+  View developer's Github at https://github.com/${data.username} 
+  Or contact at ${data.email}
+  
   ${renderLicenseSection(data.license)}
+
 `;
 }
 
